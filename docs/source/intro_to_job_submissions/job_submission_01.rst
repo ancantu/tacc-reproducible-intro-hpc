@@ -10,7 +10,7 @@ As we discussed before, on Stampede2 there are login nodes and compute nodes.
 
 We cannot run the applications we need for our research on the login nodes because they require too many resources and will interrupt the work of others. Instead, we must write a short text file containing a list of the resources we need, and containing the command(s) for running the application. Then, we submit that text file to a queue to run on compute nodes. This process is called **batch job submission**.
 
-There are several queues available on Stampede2. It is important to understand the queue limitations and pick a queue that is appropriate for your job. Documentation can be found `here <https://portal.tacc.utexas.edu/user-guides/stampede2#production-queues>`_. Today, we will be using the ``development`` queue which has a max runtime of 2 hours, and users can only submit one job at a time.
+There are several queues available on Stampede2. It is important to understand the queue limitations and pick a queue that is appropriate for your job. Documentation can be found `here <https://portal.tacc.utexas.edu/user-guides/stampede2#table5>`_. Today, we will be using the ``development`` queue which has a max runtime of 2 hours, and users can only submit one job at a time.
 
 First, navigate to the ``Lab04`` directory where we have an example job script prepared, called ``job.slurm``:
 
@@ -59,7 +59,7 @@ Next, we need to fill out ``job.slurm`` to request the necessary resources. I ha
    #SBATCH -N 1             # Total number of nodes requested (16 cores/node)
    #SBATCH -n 1             # Total number of mpi tasks requested
    #SBATCH -t 00:10:00      # Run time (hh:mm:ss)
-   #SBATCH -A CTLS2018      # <-- Allocation name to charge job against
+   #SBATCH -A               # <-- Allocation name to charge job against
 
 Now, we need to provide instructions to the compute node on how to run ``autodock_vina``. This information would come from the ``autodock_vina`` instruction manual. Continue editing ``job.slurm`` with VIM, and add this to the bottom:
 

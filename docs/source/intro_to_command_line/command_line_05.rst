@@ -86,7 +86,7 @@ Exercise
 1. Identify which Stampede2 login node you are on (login1, login2, login3)
 2. Remotely login to a different Stampede2 login node and list what files are available.
 3. Logout until you are back to your original login node.
-4. Copy the file ``chr21.fa`` to your local computer.
+4. Make your own ``my_file`` on your local computer using knowledge from our previous sections and copy ``my_file`` to your ``$WORK`` file system on Stampede2 
 
 Review of Topics Covered
 ^^^^^^^^^^^^^^^^^^^^^^^^

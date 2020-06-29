@@ -2,13 +2,16 @@
 Creating and Manipulating Files
 ===============================
 
-We have seen how to navigate around the filesystem and perform operations with folders. But, what about files? Just like on Windows or Mac, we can easily create new files, copy files, rename files, and move files to different locations. First, we will navigate to the home directory and create a few new files with the ``touch`` command:
+We have seen how to navigate around the filesystem and perform operations with folders. But, what about files? Just like on Windows or Mac, we can easily create new files, copy files, rename files, and move files to different locations. First, we will navigate to the home directory and create a few new folders and files with the ``mkdir`` and ``touch`` commands:
 
 .. code-block:: bash
 
    $ cd     # cd on an empty line will automatically take you back to the home directory
    $ pwd
    /home1/03439/wallen
+   $ mkdir folder1
+   $ mkdir folder2
+   $ mkdir folder3
    $ touch file_a
    $ touch file_b
    $ touch file_c
@@ -38,10 +41,7 @@ Before listing the results with ``ls`` or ``tree``, try to guess what the result
    .
    |-- file_c
    |-- folder1
-   |   |-- file_a
-   |   |-- subfolderA
-   |   |-- subfolderB
-   |   `-- subfolderC
+   |   `-- file_a
    |-- folder2
    |   `-- file_b
    `-- folder3
@@ -65,6 +65,21 @@ By now, you may have found that Linux is very unforgiving with typos. Generous u
    _       # underscore
    .       # period
 
+Before we move on, let's clean up once again by removing the files and folders we have created. Do you remember the command for removing non-emptyfolders?
+
+.. code-block:: bash
+
+   $ rm -r folder1
+   $ rm -r folder2
+   $ rm -r folder3
+
+How do we remove ``file_c_copy`` and ``file_c_new_name``?
+
+.. code-block:: bash
+
+   $ rm file_c_copy
+   $ rm file_c_new_name
+
 Exercise
 ^^^^^^^^
 1. Navigate to your home directory
@@ -82,7 +97,7 @@ Review of Topics Covered
 +------------------------------------+-------------------------------------------------+
 | ``rm file_name``                   |  remove a file                                  |
 +------------------------------------+-------------------------------------------------+
-| ``rm -r dir_name/``                |  remove a directory                             |                                                 
+| ``rm -r dir_name/``                |  remove a directory and its contents            |                                                 
 +------------------------------------+-------------------------------------------------+
 | ``mv file_name dir_name/``         |  move a file into a directory                   |
 +------------------------------------+-------------------------------------------------+
@@ -90,11 +105,11 @@ Review of Topics Covered
 +------------------------------------+-------------------------------------------------+
 | ``mv old_dir/ new_dir/``           |  change the name of a directory                 |
 +------------------------------------+-------------------------------------------------+
-|  ``cp old_file new_file``          |  copy a file                                    |
+| ``cp old_file new_file``           |  copy a file                                    |
 +------------------------------------+-------------------------------------------------+
-|  ``cp -r old_dir/ new_dir/``       |  copy a directory                               |
+| ``cp -r old_dir/ new_dir/``        |  copy a directory                               |
 +------------------------------------+-------------------------------------------------+
-|  ``<Tab>``                         |  autocomplete file or folder names              |
+| ``<Tab>``                          |  autocomplete file or folder names              |
 +------------------------------------+-------------------------------------------------+
-|  ``<UpArrow>``                     |  cycle through command history                  |
+| ``<UpArrow>``                      |  cycle through command history                  |
 +------------------------------------+-------------------------------------------------+

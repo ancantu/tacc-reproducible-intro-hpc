@@ -46,7 +46,6 @@ Topics Covered
  * Looking at the Contents of files (``cat``, ``more``, ``less``, ``head``, ``tail``, ``grep``)
  * Text editing with vim (insert mode, normal mode, navigating, saving, quitting)
  * Network and file transfers (``hostname``, ``whoami``, ``logout``, ``ssh``, ``scp``, ``rsync``)
- * Environment variables - purpose, printing, and defining
 
 .. toctree::
    :maxdepth: 1
@@ -57,5 +56,4 @@ Topics Covered
    command_line_03.rst
    command_line_04.rst
    command_line_05.rst
-   command_line_06.rst
 

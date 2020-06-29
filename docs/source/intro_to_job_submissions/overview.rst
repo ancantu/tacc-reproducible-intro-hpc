@@ -14,7 +14,7 @@ Topics Covered
 ^^^^^^^^^^^^^^
 
  * Batch job submission, commands dependent on system (``sbatch``, ``showq``, ``scancel``).
- * Interactive sessions with ``idev``
+ * Interactive sessions with ``idev`` (``idev``, ``idev -help``)
 
 .. toctree::
    :maxdepth: 1

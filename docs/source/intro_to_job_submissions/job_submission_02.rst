@@ -8,7 +8,7 @@ Initiating an Interactive Session
 
 To learn about the command line options available for ``idev``, use ``idev -help``.
 
-.. code-block::bash
+.. code-block:: bash
    
    login1$ idev -help
    ...
@@ -31,11 +31,11 @@ To change the **queue** to be different than the default ``development`` queue, 
 
 Note: For the scope of this section, we will be using the default ``development`` queue.  
 
-To start a thirty-minute interactive session on a compute node in the development queue:
+To start a thirty-minute interactive session on a compute node in the development queue with our ``TRAINING-HPC`` allocation:
 
 .. code-block:: bash
    
-   login1$ idev   
+   login1$ idev -A TRAINING-HPC   
 
 If launch is successful, you will see output that includes the following excerpts:
 

@@ -59,7 +59,7 @@ Next, we need to fill out ``job.slurm`` to request the necessary resources. I ha
    #SBATCH -N 1             # Total number of nodes requested (16 cores/node)
    #SBATCH -n 1             # Total number of mpi tasks requested
    #SBATCH -t 00:10:00      # Run time (hh:mm:ss)
-   #SBATCH -A               # <-- Allocation name to charge job against
+   #SBATCH -A TRAINING-HPC  # <-- Allocation name to charge job against
 
 Now, we need to provide instructions to the compute node on how to run ``autodock_vina``. This information would come from the ``autodock_vina`` instruction manual. Continue editing ``job.slurm`` with VIM, and add this to the bottom:
 

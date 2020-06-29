@@ -65,7 +65,7 @@ By now, you may have found that Linux is very unforgiving with typos. Generous u
    _       # underscore
    .       # period
 
-Before we move on, let's clean up once again by removing the files and folders we have created. Do you remember the command for removing non-emptyfolders?
+Before we move on, let's clean up once again by removing the files and folders we have created. Do you remember the command for removing non-empty folders?
 
 .. code-block:: bash
 

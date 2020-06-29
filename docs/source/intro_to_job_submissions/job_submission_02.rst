@@ -6,7 +6,7 @@ The ``idev`` utility initiates an interactive session on one or more compute nod
 Initiating an Interactive Session
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To learn about the command line options available for ``idev``, use ``idev -help``..
+To learn about the command line options available for ``idev``, use ``idev -help``.
 
 .. code-block::bash
    
@@ -23,15 +23,16 @@ To learn about the command line options available for ``idev``, use ``idev -help
 
 Let's go over some of the most useful ``idev`` command line options that can customize your interactive session:
 
-To change the time limit to be lesser or greater than the default 30 minutes, users can use the ``-m`` command line option. For example, a user requesting an interactive session for an hour would use the command line option ``-m 60``.
+To change the **time** limit to be lesser or greater than the default 30 minutes, users can use the ``-m`` command line option. For example, a user requesting an interactive session for an hour would use the command line option ``-m 60``.
 
-To change the account_name associated with the interactive session, users can use the ``-A`` command line option. This option is useful for when a user has multiple allocations they belong to. For example, if I have allocations on accounts ``TACC`` and ``Training``, I can use ``-A`` to set the allocation I want to be used like so: ``-A TACC`` or ``-A Training``.
+To change the **account_name** associated with the interactive session, users can use the ``-A`` command line option. This option is useful for when a user has multiple allocations they belong to. For example, if I have allocations on accounts ``TACC`` and ``Training``, I can use ``-A`` to set the allocation I want to be used like so: ``-A TACC`` or ``-A Training``.
 
-To change the queue to be different than the default ``development`` queue, users can use the ``-p`` command line option. For example, if a user wants to launch an interactive session on one of Stampede2's ``Skylake`` (SKX) compute nodes, they would use the command line option ``-p skx-dev`` or ``-p skx-normal``. Note that the ``-p skx-large`` queue will be out of scope for most project users. You can learn more about the different queues of Stampede2 `here<https://portal.tacc.utexas.edu/user-guides/stampede2#table5>`_.
+To change the **queue** to be different than the default ``development`` queue, users can use the ``-p`` command line option. For example, if a user wants to launch an interactive session on one of Stampede2's ``Skylake`` (SKX) compute nodes, they would use the command line option ``-p skx-dev`` or ``-p skx-normal``. Note that the ``-p skx-large`` queue will be out of scope for most project users. You can learn more about the different queues of Stampede2 `here <https://portal.tacc.utexas.edu/user-guides/stampede2#table5>`_.
 
 Note: For the scope of this section, we will be using the default ``development`` queue.  
 
 To start a thirty-minute interactive session on a compute node in the development queue:
+
 .. code-block:: bash
    
    login1$ idev   

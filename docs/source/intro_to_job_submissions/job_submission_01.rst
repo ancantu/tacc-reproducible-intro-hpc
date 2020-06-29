@@ -71,8 +71,9 @@ Now, we need to provide instructions to the compute node on how to run ``autodoc
    date
 
    module list
-   module load boost
-   module load autodock_vina
+   module load intel/17.0.4
+   module load boost/1.64
+   module load autodock_vina/1.1.2
    module list
 
    cd data/
@@ -112,7 +113,6 @@ If everything went well, you should have an output file named something similar 
 
 .. code-block:: bash
 
-   $ more
    $ cat vina_job.o864828
        # closely examine output
 
@@ -125,4 +125,4 @@ If everything went well, you should have an output file named something similar 
 
 *(Output visualized in UCSF Chimera)*
 
-Congratulations! You ran a batch job on Stampede2!
+**Congratulations! You ran a batch job on Stampede2!**

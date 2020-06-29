@@ -9,7 +9,7 @@ Open a file (or create a new file if it does not exist):
  
    $ vim file_name
 
-There are two "modes" in VIM that we will talk about today. They are called "insert mode" and "normal mode". In insert mode, the user is typing text into a file as seen through the terminal (think about typing text into TextEdit or Notepad). In normal mode, the user can perform other functions like save, quit, cut and paste, find and replace, etc. (think about clicking the menu options in TextEdit or Notepad). The two main keys to remember to toggle between the modes are `i` and `Esc`.
+There are two "modes" in VIM that we will talk about today. They are called "insert mode" and "normal mode". In insert mode, the user is typing text into a file as seen through the terminal (think about typing text into TextEdit or Notepad). In normal mode, the user can perform other functions like save, quit, cut and paste, find and replace, etc. (think about clicking the menu options in TextEdit or Notepad). The two main keys to remember to toggle between the modes are ``i`` and ``Esc``.
 
 Entering VIM insert mode:
 
@@ -66,20 +66,20 @@ Review of Topics Covered
 +------------------------------------+-------------------------------------------------+
 | Command                            |          Effect                                 |
 +====================================+=================================================+
-| ``vim file.txt``                   |  print file contents to screen                  |
+| ``vim file.txt``                   |  open "file.txt" and edit with ``vim``          |
 +------------------------------------+-------------------------------------------------+
-| ``i``                              |  redirect output to new file                    |
+| ``i``                              |  toggle to insert mode                          |
 +------------------------------------+-------------------------------------------------+
-| ``<Esc>``                          |  scroll through file contents                   |                                                 
+| ``<Esc>``                          |  toggle to normal mode                          |                                                 
 +------------------------------------+-------------------------------------------------+
-| ``<arrow keys>``                   |  scroll through file contents                   |
+| ``<arrow keys>``                   |  navigate the file                              |
 +------------------------------------+-------------------------------------------------+
-| ``:q``                             |  output beginning of file                       |
+| ``:q``                             |  quit ending the file                           |
 +------------------------------------+-------------------------------------------------+
-| ``:q!``                            |  output end of a file                           |
+| ``:q!``                            |  quit editing the file without saving           |
 +------------------------------------+-------------------------------------------------+
-|  ``:w``                            |  search for 'pattern' in a file                 |
+|  ``:w``                            |  save the file, continue editing                |
 +------------------------------------+-------------------------------------------------+
-|  ``:wq``                           |  shortcut for home directory                    |
+|  ``:wq``                           |  save and quit                                  |
 +------------------------------------+-------------------------------------------------+
   

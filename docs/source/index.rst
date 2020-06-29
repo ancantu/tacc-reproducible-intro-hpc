@@ -11,6 +11,7 @@ Introduction to Using High Performance Computing
    :caption: Contents:
 
    intro_to_hpc/overview
+   setup.rst
    intro_to_command_line/overview
    intro_to_job_submissions/overview
 

@@ -2,8 +2,8 @@
 Introduction to the Command Line 
 =================================
 
-Getting Set Up
-^^^^^^^^^^^^^^
+Set Up Reminder
+^^^^^^^^^^^^^^^
 
 To log in to Stampede2, follow the instructions for your operating system below.
 

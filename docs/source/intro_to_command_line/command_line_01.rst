@@ -40,7 +40,7 @@ Now we have some folders to work with. To "open" a folder, navigate into that fo
    $ pwd
    /home1/03439/wallen/folder1
 
-Now that we are inside folder1, make a few sub-folders:
+Now that we are inside ``folder1``, make a few sub-folders:
 
 .. code-block:: bash
 
@@ -103,6 +103,24 @@ A bonus command available on some Linux operating systems is called ``tree``. Th
    |-- folder2
    `-- folder3
 
+Before we move on, let's remove the directories we have made, using ``rm -r`` to remove our parent folder ``folder1`` and its subfolders. The ``-r`` command line option recursively removes subfolders and files located "down" the parent directory. ``-r`` is required for non-empty folders.
+
+.. code-block:: bash
+
+   $ rm -r folder1
+   $ ls 
+   folder2 folder3
+
+Which command should we use to remove ``folder2`` and ``folder3``?
+
+.. code-block:: bash
+
+   $ rmdir folder2
+   $ rmdir folder3
+   $ ls
+
+Why could we use ``rmdir`` on ``folder2`` and ``folder3``, but not on ``folder1``?
+
 Exercise
 ^^^^^^^^
 1. Navigate to your home directory
@@ -130,10 +148,12 @@ Review of Topics Covered
 +------------------------------------+-------------------------------------------------+
 | ``rmdir dir_name/``                |  remove an empty directory                      |
 +------------------------------------+-------------------------------------------------+
-|  ``tree``                          |  list files and directories hierarchically      |
+| ``rm -r dir_name/``                |  remove a directory and its contents            |
 +------------------------------------+-------------------------------------------------+
-|  ``.`` or ``./``                   |  refers to the present location                 |
+| ``tree``                           |  list files and directories hierarchically      |
 +------------------------------------+-------------------------------------------------+
-|  ``..`` or ``../``                 |  refers to the parent directory                 |
+| ``.`` or ``./``                    |  refers to the present location                 |
++------------------------------------+-------------------------------------------------+
+| ``..`` or ``../``                  |  refers to the parent directory                 |
 +------------------------------------+-------------------------------------------------+
 

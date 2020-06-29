@@ -2,8 +2,8 @@
 What are the disk/file system resources on TACC HPC systems?
 ============================================================
 
-.. image:: ./images/hpc_storage.png
-   :target: ./images/hpc_storage.png
+.. image:: ./images/HPC_Storage.png
+   :target: ./images/HPC_Storage.png
    :alt: Schematic Diagram of TACC HPC Cluster
 
 **A typical HPC cluster schematic at TACC is outlined above.**
